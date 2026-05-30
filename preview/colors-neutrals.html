@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sw { border: 1px solid var(--hairline); border-radius: var(--r-md); overflow: hidden; background: var(--surface-1); }
+  .sw .chip { height: 56px; }
+  .sw .m { padding: 8px 10px; }
+  .sw .n { font-size: 12px; font-weight: 500; }
+  .sw .h { font-family: var(--font-mono); font-size: 11px; color: var(--ink-subtle); margin-top: 1px; }
+</style></head>
+<body>
+  <div class="lbl">Core palette · canvas → ink</div>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:#05070B"></div><div class="m"><div class="n">canvas</div><div class="h">#05070B</div></div></div>
+    <div class="sw"><div class="chip" style="background:#090D14"></div><div class="m"><div class="n">canvas-soft</div><div class="h">#090D14</div></div></div>
+    <div class="sw"><div class="chip" style="background:#0D111A"></div><div class="m"><div class="n">surface-1</div><div class="h">#0D111A</div></div></div>
+    <div class="sw"><div class="chip" style="background:#121826"></div><div class="m"><div class="n">surface-2</div><div class="h">#121826</div></div></div>
+    <div class="sw"><div class="chip" style="background:#182033"></div><div class="m"><div class="n">surface-3</div><div class="h">#182033</div></div></div>
+    <div class="sw"><div class="chip" style="background:#222A3A"></div><div class="m"><div class="n">hairline</div><div class="h">#222A3A</div></div></div>
+    <div class="sw"><div class="chip" style="background:#33405A"></div><div class="m"><div class="n">hairline-strong</div><div class="h">#33405A</div></div></div>
+    <div class="sw"><div class="chip" style="background:#4F5B6E"></div><div class="m"><div class="n">ink-faint</div><div class="h">#4F5B6E</div></div></div>
+    <div class="sw"><div class="chip" style="background:#7F8A9B"></div><div class="m"><div class="n">ink-subtle</div><div class="h">#7F8A9B</div></div></div>
+    <div class="sw"><div class="chip" style="background:#B8C2D0"></div><div class="m"><div class="n">ink-muted</div><div class="h">#B8C2D0</div></div></div>
+    <div class="sw"><div class="chip" style="background:#F4F7FA"></div><div class="m"><div class="n">ink</div><div class="h">#F4F7FA</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--fabric-gradient)"></div><div class="m"><div class="n">fabric</div><div class="h">gradient</div></div></div>
+  </div>
+</body></html>

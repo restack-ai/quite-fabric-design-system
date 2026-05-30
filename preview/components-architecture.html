@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .strip { background: var(--canvas-soft); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: 20px 16px 14px; position: relative; overflow: hidden; }
+  .strip::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(83,208,197,0.72), rgba(110,139,255,0.46), transparent); }
+  .track { position: relative; display: flex; justify-content: space-between; gap: 8px; }
+  .line { position: absolute; top: 50%; left: 8%; right: 8%; height: 1px; background: var(--route-line); opacity: 0.4; }
+  .signal { position: absolute; top: 50%; left: 8%; width: 7px; height: 7px; border-radius: 50%; background: var(--quiet-cyan); box-shadow: var(--glow-cyan); transform: translateY(-50%); animation: travel 4.5s linear infinite; }
+  @keyframes travel { 0%{left:8%;opacity:0} 8%{opacity:1} 92%{opacity:1} 100%{left:92%;opacity:0} }
+  .node { position: relative; z-index: 1; background: var(--surface-1); border: 1px solid var(--hairline); border-radius: var(--r-md); padding: 9px 11px; flex: 1; text-align: center; }
+  .node .nm { font-size: 12px; font-weight: 500; }
+  .node .mt { font-family: var(--font-mono); font-size: 10px; color: var(--ink-subtle); margin-top: 2px; }
+  .cap { font-size: 12px; color: var(--ink-subtle); margin-top: 12px; font-style: italic; }
+</style></head>
+<body>
+  <div class="lbl">Architecture surface · live inference route</div>
+  <div class="strip">
+    <div class="track">
+      <span class="line"></span><span class="signal"></span>
+      <div class="node"><div class="nm">edge-ingress</div><div class="mt">kr · 2ms</div></div>
+      <div class="node"><div class="nm">fabric-router</div><div class="mt">400G · ecn</div></div>
+      <div class="node"><div class="nm">gpu-pool</div><div class="mt">b200 ×8</div></div>
+      <div class="node"><div class="nm">token-stream</div><div class="mt">sse · live</div></div>
+    </div>
+    <div class="cap">Route stable for 142d 06h — last reschedule 11m ago.</div>
+  </div>
+</body></html>

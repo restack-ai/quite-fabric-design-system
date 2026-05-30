@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card { background: var(--surface-1); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: 20px; }
+  .card.featured { border-color: var(--hairline-strong); background: linear-gradient(180deg, rgba(110,139,255,0.09), color-mix(in srgb, var(--surface-1) 95%, transparent)), var(--surface-1); }
+  .kicker { font-family: var(--font-mono); font-size: 11px; color: var(--cyan-text); }
+  .price { font-family: var(--font-mono); font-size: 34px; color: var(--ink); margin: 6px 0 10px; line-height: 1; }
+  .price small { font-size: 13px; color: var(--ink-subtle); }
+  ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  li { font-size: 13px; color: var(--ink-muted); display: flex; gap: 8px; }
+  li::before { content: "—"; color: var(--quiet-cyan); }
+</style></head>
+<body>
+  <div class="lbl">Cards &amp; containers · field-note / system-lab</div>
+  <div class="grid">
+    <div class="card">
+      <div class="kicker">field-note / Free</div>
+      <div class="price">$0</div>
+      <ul><li>Architecture notes</li><li>Single namespace</li><li>Community patterns</li></ul>
+    </div>
+    <div class="card featured">
+      <div class="kicker">system-lab / Standard</div>
+      <div class="price">$24<small> /mo</small></div>
+      <ul><li>Topology workspaces</li><li>Live route specimens</li><li>Observability templates</li></ul>
+    </div>
+  </div>
+</body></html>

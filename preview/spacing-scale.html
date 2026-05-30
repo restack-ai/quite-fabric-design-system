@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .scale { display: flex; flex-direction: column; gap: 9px; }
+  .bar { display: flex; align-items: center; gap: 14px; }
+  .fill { height: 14px; background: var(--fabric-blue); border-radius: 3px; opacity: 0.85; }
+  .nm { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); width: 64px; }
+  .px { font-family: var(--font-mono); font-size: 11px; color: var(--ink-subtle); }
+</style></head>
+<body>
+  <div class="lbl">Spacing scale · 4px base unit</div>
+  <div class="scale">
+    <div class="bar"><span class="nm">xxs</span><span class="fill" style="width:4px"></span><span class="px">4</span></div>
+    <div class="bar"><span class="nm">xs</span><span class="fill" style="width:8px"></span><span class="px">8</span></div>
+    <div class="bar"><span class="nm">sm</span><span class="fill" style="width:12px"></span><span class="px">12</span></div>
+    <div class="bar"><span class="nm">md</span><span class="fill" style="width:16px"></span><span class="px">16</span></div>
+    <div class="bar"><span class="nm">lg</span><span class="fill" style="width:24px"></span><span class="px">24</span></div>
+    <div class="bar"><span class="nm">xl</span><span class="fill" style="width:32px"></span><span class="px">32</span></div>
+    <div class="bar"><span class="nm">2xl</span><span class="fill" style="width:48px"></span><span class="px">48</span></div>
+    <div class="bar"><span class="nm">3xl</span><span class="fill" style="width:64px"></span><span class="px">64</span></div>
+    <div class="bar"><span class="nm">section</span><span class="fill" style="width:96px"></span><span class="px">96</span></div>
+  </div>
+</body></html>

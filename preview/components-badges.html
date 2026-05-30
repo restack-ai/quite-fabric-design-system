@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .badge { display: inline-flex; align-items: center; gap: 6px; border-radius: var(--r-full); padding: 4px 11px; font-size: 12px; font-weight: 500; border: 1px solid var(--hairline); background: var(--surface-2); color: var(--ink-muted); }
+  .badge .ind { width: 6px; height: 6px; border-radius: 50%; background: var(--ink-subtle); }
+  .ok { border-color: color-mix(in srgb, var(--signal-green) 40%, var(--hairline)); color: var(--green-text); }
+  .ok .ind { background: var(--signal-green); box-shadow: 0 0 7px var(--signal-green); }
+  .warn { border-color: color-mix(in srgb, var(--event-amber) 40%, var(--hairline)); color: var(--amber-text); }
+  .warn .ind { background: var(--event-amber); }
+  .err { border-color: color-mix(in srgb, var(--fault-red) 40%, var(--hairline)); color: var(--red-text); }
+  .err .ind { background: var(--fault-red); }
+  .stream .ind { background: var(--quiet-cyan); animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+</style></head>
+<body>
+  <div class="lbl">Status badges · operational state</div>
+  <div class="row">
+    <span class="badge ok"><span class="ind"></span>route healthy</span>
+    <span class="badge stream"><span class="ind"></span>streaming</span>
+    <span class="badge"><span class="ind"></span>24 queued</span>
+    <span class="badge warn"><span class="ind"></span>backpressure</span>
+    <span class="badge err"><span class="ind"></span>node drained</span>
+  </div>
+</body></html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding-top: 4px; }
+  .cell { text-align: center; }
+  .box { height: 56px; background: var(--surface-1); border: 1px solid var(--hairline); border-radius: var(--r-lg); margin-bottom: 10px; }
+  .n { font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted); }
+  .v { font-family: var(--font-mono); font-size: 10px; color: var(--ink-subtle); margin-top: 2px; }
+</style></head>
+<body>
+  <div class="lbl">Elevation · quiet, low-contrast — depth from surfaces, not shadow</div>
+  <div class="grid">
+    <div class="cell"><div class="box" style="box-shadow:var(--shadow-sm)"></div><div class="n">shadow-sm</div><div class="v">subtle</div></div>
+    <div class="cell"><div class="box" style="box-shadow:var(--shadow-md)"></div><div class="n">shadow-md</div><div class="v">card lift</div></div>
+    <div class="cell"><div class="box" style="box-shadow:var(--shadow-lg)"></div><div class="n">shadow-lg</div><div class="v">overlay</div></div>
+    <div class="cell"><div class="box" style="box-shadow:var(--glow-cyan);border-color:var(--quiet-cyan)"></div><div class="n">glow-cyan</div><div class="v">live node</div></div>
+  </div>
+</body></html>

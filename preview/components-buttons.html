@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .btn { border-radius: var(--r-md); padding: 9px 16px; font-size: 14px; font-weight: 500; font-family: var(--font-sans); cursor: pointer; display: inline-flex; align-items: center; gap: 8px; line-height: 1; border: 1px solid transparent; transition: all var(--t-fast) var(--ease); }
+  .primary { background: var(--fabric-blue); color: #fff; border-color: rgba(255,255,255,0.10); }
+  .primary:hover { filter: brightness(1.08); box-shadow: var(--glow-blue); }
+  .secondary { background: var(--surface-1); color: var(--ink); border-color: var(--hairline); }
+  .secondary:hover { border-color: var(--hairline-strong); background: var(--surface-2); }
+  .ghost { background: transparent; color: var(--ink-muted); }
+  .ghost:hover { color: var(--ink); background: var(--surface-1); }
+  .grp { margin-bottom: 14px; }
+</style></head>
+<body>
+  <div class="lbl">Buttons · primary / secondary / ghost</div>
+  <div class="row grp">
+    <button class="btn primary">Deploy route</button>
+    <button class="btn secondary">View topology</button>
+    <button class="btn ghost">Cancel</button>
+  </div>
+  <div class="lbl">Hover state shown →</div>
+  <div class="row">
+    <button class="btn primary" style="filter:brightness(1.08);box-shadow:var(--glow-blue)">Deploy route</button>
+    <button class="btn secondary" style="border-color:var(--hairline-strong);background:var(--surface-2)">View topology</button>
+    <button class="btn ghost" style="color:var(--ink);background:var(--surface-1)">Cancel</button>
+  </div>
+</body></html>

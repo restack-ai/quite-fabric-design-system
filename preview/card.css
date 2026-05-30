@@ -1,0 +1,13 @@
+/* Shared base for preview/ specimen cards.
+   Each card is a self-contained ~700px-wide specimen with no title
+   chrome (the asset name renders outside the card). */
+@import url("../fonts/fonts.css");
+@import url("../colors_and_type.css");
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--canvas); color: var(--ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+body { padding: 22px 24px; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.col { display: flex; flex-direction: column; }
+.mono { font-family: var(--font-mono); }
+.lbl { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.6px; text-transform: uppercase; color: var(--ink-subtle); margin-bottom: 12px; }

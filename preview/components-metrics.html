@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .tile { background: var(--surface-1); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: 16px; }
+  .val { font-family: var(--font-mono); font-size: 24px; color: var(--ink); }
+  .val .u { font-size: 12px; color: var(--ink-subtle); }
+  .lab { font-size: 12px; color: var(--ink-subtle); margin-top: 5px; }
+  .spark { display: flex; align-items: flex-end; gap: 3px; height: 22px; margin-top: 12px; }
+  .spark i { flex: 1; background: color-mix(in srgb, var(--fabric-blue) 55%, transparent); border-radius: 1px; }
+</style></head>
+<body>
+  <div class="lbl">Metric tiles · GPU / network / queue with sparkline</div>
+  <div class="grid">
+    <div class="tile"><div class="val">38<span class="u">ms</span></div><div class="lab">TTFT p50</div><div class="spark"><i style="height:40%"></i><i style="height:55%"></i><i style="height:35%"></i><i style="height:60%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:52%"></i></div></div>
+    <div class="tile"><div class="val">126<span class="u">tok/s</span></div><div class="lab">TPOT</div><div class="spark"><i style="height:50%"></i><i style="height:62%"></i><i style="height:58%"></i><i style="height:74%"></i><i style="height:66%"></i><i style="height:80%"></i><i style="height:72%"></i></div></div>
+    <div class="tile"><div class="val">71<span class="u">%</span></div><div class="lab">GPU util</div><div class="spark"><i style="height:60%"></i><i style="height:68%"></i><i style="height:55%"></i><i style="height:72%"></i><i style="height:64%"></i><i style="height:78%"></i><i style="height:71%"></i></div></div>
+    <div class="tile"><div class="val">24<span class="u">q</span></div><div class="lab">queue depth</div><div class="spark"><i style="height:30%"></i><i style="height:42%"></i><i style="height:38%"></i><i style="height:28%"></i><i style="height:46%"></i><i style="height:34%"></i><i style="height:40%"></i></div></div>
+  </div>
+</body></html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .row2 { display: grid; grid-template-columns: 96px 1fr; gap: 18px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--hairline); }
+  .row2:last-child { border-bottom: none; }
+  .k { font-family: var(--font-mono); font-size: 11px; color: var(--ink-subtle); }
+  .k b { display: block; color: var(--ink-muted); font-weight: 500; }
+  .title { font-size: 20px; font-weight: 500; letter-spacing: -0.2px; }
+  .body { font-size: 16px; color: var(--ink-muted); }
+  .mn { font-family: var(--font-mono); font-size: 13px; color: var(--cyan-text); }
+</style></head>
+<body>
+  <div class="lbl">Body &amp; mono · Pretendard + JetBrains Mono</div>
+  <div class="row2"><div class="k"><b>title</b>20 / 500</div><div class="title">Inference route scheduling</div></div>
+  <div class="row2"><div class="k"><b>body</b>16 / 400</div><div class="body">Body text breathes — confidence comes from clarity, not volume.</div></div>
+  <div class="row2"><div class="k"><b>mono</b>13 / 400</div><div class="mn">kubectl get pods -n inference --field-selector status.phase=Running</div></div>
+</body></html>

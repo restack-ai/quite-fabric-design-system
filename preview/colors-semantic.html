@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="card.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .sw { border: 1px solid var(--hairline); border-radius: var(--r-lg); overflow: hidden; background: var(--surface-1); }
+  .sw .chip { height: 72px; }
+  .sw .m { padding: 10px 12px; }
+  .sw .n { font-size: 13px; font-weight: 500; }
+  .sw .h { font-family: var(--font-mono); font-size: 11px; color: var(--ink-subtle); margin-top: 2px; }
+</style></head>
+<body>
+  <div class="lbl">Semantic · operational state, never decoration</div>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:#3DDC97"></div><div class="m"><div class="n">signal-green</div><div class="h">#3DDC97 · healthy</div></div></div>
+    <div class="sw"><div class="chip" style="background:#F5B756"></div><div class="m"><div class="n">event-amber</div><div class="h">#F5B756 · warning</div></div></div>
+    <div class="sw"><div class="chip" style="background:#FF6B7A"></div><div class="m"><div class="n">fault-red</div><div class="h">#FF6B7A · error</div></div></div>
+  </div>
+</body></html>
