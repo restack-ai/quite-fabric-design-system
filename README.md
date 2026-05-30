@@ -8,6 +8,10 @@ It is **not** a generic AI-startup style. It combines Linear-like structural dis
 
 The system should feel: **calm, deep, technical, precise, quietly futuristic, minimal but not empty.** It should feel like a control plane that has been running reliably for years.
 
+- [Demo](https://restack-ai.github.io/quite-fabric-design-system/) 
+- [Slides](https://restack-ai.github.io/quite-fabric-design-system/slides/) 
+- [Preview](https://restack-ai.github.io/quite-fabric-design-system/preview/) 
+
 ---
 
 ## Sources
