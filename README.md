@@ -10,7 +10,7 @@ The system should feel: **calm, deep, technical, precise, quietly futuristic, mi
 
 - [Demo](https://restack-ai.github.io/quite-fabric-design-system/) 
 - [Slides](https://restack-ai.github.io/quite-fabric-design-system/slides/) 
-- [Preview](https://restack-ai.github.io/quite-fabric-design-system/preview/) 
+- [Components](https://restack-ai.github.io/quite-fabric-design-system/preview/) 
 
 ---
 
